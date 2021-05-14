@@ -7,6 +7,7 @@ body {
   background-color: #faf5ed;
 }
 
+/* ANIMATED FLOWERS */
 .rotate {
   animation: rotation 5s infinite linear;
 }
