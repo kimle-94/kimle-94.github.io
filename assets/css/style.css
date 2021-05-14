@@ -1,0 +1,551 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #faf5ed;
+}
+
+.rotate {
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* HEADER  */
+header .navbar {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 1600px;
+  height: 100px;
+  margin-top: 5rem;
+}
+
+/* Menu Button
+.button {
+  border: none;
+  background-color: #faf5ed;
+} */
+
+#menu {
+  cursor: pointer;
+}
+
+.menu2 {
+  transform: rotate(180deg);
+}
+
+/* Menu Invisible */
+/* #invisible {
+  display: none;
+  position: absolute;
+  background: #faf5ed;
+  z-index: 10;
+
+  padding: auto;
+  text-align: center;
+  top: calc(50vh - 350px);
+  height: 780px;
+  width: 100vw; */
+
+#invisible.visible {
+  display: block;
+}
+
+/* FOOTER */
+footer {
+  position: absolute;
+  bottom: 3rem;
+  width: 100vw;
+}
+footer .line {
+  width: 1600px;
+  margin-bottom: 1rem;
+  border: 1px solid #221e1f;
+}
+
+.lower-footer {
+  display: flex;
+  /* flex-basis: 200px; */
+  justify-content: space-between;
+  width: 1600px;
+  height: 13px;
+
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  /* letter-spacing: 0.05em; */
+
+  color: #221e1f;
+}
+.lower-footer span {
+  width: 400px;
+}
+.lower-footer span:nth-child(2) {
+  text-align: center;
+}
+.lower-footer span:nth-child(3) {
+  text-align: right;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1600px;
+}
+
+/* HERO PAGE */
+/* HERO PAGE */
+
+.hero-content {
+  position: absolute;
+  margin: 0;
+  top: calc(50vh);
+}
+.main-content {
+  display: flex;
+  width: 1600px;
+}
+
+.content-style {
+  /* width: 250px; */
+  width: 1174px;
+  height: 395px;
+  left: 89px;
+  top: 517px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 122px;
+  letter-spacing: 0.02em;
+
+  color: #ed9200;
+}
+
+.hi {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 569px;
+  top: 284px;
+}
+
+.star {
+  position: absolute;
+  width: 83.84px;
+  height: 83.84px;
+  left: 550px;
+  top: 265px;
+}
+
+/* MENU PAGE */
+/* MENU PAGE */
+
+.work a,
+.contact a,
+.about a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 100px;
+  letter-spacing: 0.05em;
+  display: absolute;
+  align-items: center;
+  text-align: center;
+
+  color: #faf5ed;
+  text-decoration: none;
+}
+
+.work a {
+  position: absolute;
+  width: 267px;
+  height: 110px;
+  left: 827px;
+  top: 355px;
+}
+
+.contact a {
+  position: absolute;
+  width: 404px;
+  height: 110px;
+  left: 758px;
+  top: 485px;
+}
+
+.about a {
+  position: absolute;
+  width: 304px;
+  height: 110px;
+  left: 808px;
+  top: 615px;
+}
+
+.work a:hover,
+.contact a:hover,
+.about a:hover {
+  color: #ed9200;
+  /* -webkit-text-fill-color: #ed9200; */
+}
+/* 
+.menu-bar {
+  position: absolute;
+  margin: 0;
+  top: calc(50vh - 185px);
+} */
+
+/* CONTACT PAGE */
+/* CONTACT PAGE */
+
+/* Hover Mouse */
+
+#for-tam {
+  color: #ba4a4a;
+}
+#for-tam:hover {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.gmail a,
+.behance a,
+.linkedin a,
+.resume a {
+  color: #221e1f;
+  text-decoration: none;
+}
+
+.gmail a:hover {
+  color: #bb001b;
+}
+.behance a:hover {
+  color: #053eff;
+}
+.linkedin a:hover {
+  color: #0077b5;
+}
+.resume a:hover {
+  color: #ed9200;
+}
+/* Hover Mouse */
+
+.contact-page {
+  position: absolute;
+  margin: 0;
+  top: 331px;
+  width: 1600px;
+  /* height: 496px; */
+}
+.contact-line1 {
+  height: 253px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 200px;
+
+  color: #ed9200;
+}
+
+.contact-line2 {
+  height: 220px;
+
+  font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26.5px;
+
+  color: #221e1f;
+}
+
+.contact-line3 {
+  font-family: Karla;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+
+  color: #221e1f;
+}
+
+.flower-contact {
+  position: absolute;
+  width: 155px;
+  height: 155px;
+  left: 970px;
+  top: 381px;
+}
+
+.smile-face {
+  position: absolute;
+  width: 70px;
+  height: 56px;
+  left: 1012px;
+  top: 434px;
+}
+
+#contact-rectangle {
+  position: absolute;
+  width: 1600px;
+  height: 120px;
+
+  border: 2px solid #221e1f;
+  box-sizing: border-box;
+}
+
+#line1 {
+  position: absolute;
+  height: 70px;
+  top: 25px;
+  left: 310px;
+
+  border: 1px solid #221e1f;
+}
+
+#line2 {
+  position: absolute;
+  height: 70px;
+  top: 25px;
+  left: 800px;
+
+  border: 1px solid #221e1f;
+}
+
+#line3 {
+  position: absolute;
+  height: 70px;
+  top: 25px;
+  left: 1229px;
+
+  border: 1px solid #221e1f;
+}
+
+.contact-link {
+  position: absolute;
+  margin: 0;
+  top: calc(81.5vh);
+
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  letter-spacing: 0.07em;
+
+  color: #221e1f;
+}
+
+.gmail {
+  position: absolute;
+  /* width: 133px; */
+  left: 90px;
+  top: 35px;
+}
+
+.behance {
+  position: absolute;
+  /* width: 200px; */
+  left: 452px;
+  top: 35px;
+}
+
+.linkedin {
+  position: absolute;
+  /* width: 199px; */
+  left: 920px;
+  top: 35px;
+}
+
+.resume {
+  position: absolute;
+  /* width: 170px; */
+  left: 1335px;
+  top: 35px;
+}
+
+/* ABOUT PAGE */
+/* ABOUT PAGE */
+
+.about-rectangle {
+  position: absolute;
+  width: 1600px;
+  height: 809px;
+
+  border: 2px solid #221e1f;
+  box-sizing: border-box;
+}
+
+.rectangle-photo1 {
+  position: absolute;
+  width: 400px;
+  height: 580px;
+  /* left: 1300px; */
+  left: calc(65.2vw);
+  top: 300px;
+
+  border: 2px solid #ed9200;
+  box-sizing: border-box;
+}
+
+.rectangle-photo2 {
+  position: absolute;
+  width: 400px;
+  height: 580px;
+  /* left: 1315px; */
+  left: calc(66.2vw);
+  top: 280px;
+
+  border: 2px solid #ba4a4a;
+  box-sizing: border-box;
+}
+
+.line-about {
+  position: absolute;
+  height: 805px;
+  left: calc(60vw);
+  top: 180px;
+  border: 1px solid #221e1f;
+}
+
+.intro-page {
+  position: absolute;
+  width: 888px;
+  height: 650px;
+  left: 240px;
+  /* top: calc(25vh); */
+}
+
+.title-about {
+  position: absolute;
+  height: 110px;
+  top: 70px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 82px;
+  line-height: 110px;
+  letter-spacing: 1.5px;
+
+  color: #ed9200;
+}
+
+.intro-para {
+  position: absolute;
+  width: 888px;
+  height: 479px;
+  top: 220px;
+
+  font-family: Karla;
+  font-size: 30px;
+  line-height: 55px;
+
+  color: #221e1f;
+}
+
+.flower-icon2 {
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  left: 1087px;
+  /* left: calc(59.2vw); */
+  top: 515px;
+}
+
+.smile-face2 {
+  position: absolute;
+  width: 41px;
+  height: 34px;
+  left: 1130px;
+  top: 562px;
+}
+
+.noted-photo {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #221e1f;
+
+  transform: rotate(90deg);
+}
+
+.first-noted {
+  position: absolute;
+  width: 445px;
+  height: 98px;
+  left: 900px;
+  top: -600px;
+}
+
+.second-noted {
+  position: absolute;
+  width: 553px;
+  height: 98px;
+  left: 950px;
+  top: -500px;
+}
+
+/* WORK PAGE */
+/* WORK PAGE */
+
+.noti {
+  position: absolute;
+  width: 1000px;
+  height: 98px;
+  left: 487px;
+  top: 491px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 98px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #221e1f;
+}
+
+.back a {
+  position: absolute;
+  width: 709px;
+  height: 98px;
+  left: 605px;
+  top: 875px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 98px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ba4a4a;
+  text-decoration: none;
+}
