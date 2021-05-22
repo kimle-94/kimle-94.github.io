@@ -3,19 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kim Le &#8211; Menu</title>
+    <title>iLa Generation &#8211; Kim Le</title>
     <link rel="icon" type="svg" href="/assets/svg/favicon.svg" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <style>
-      body {
-        background-color: #221e1f !important;
-      }
-    </style>
+
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
+    <script src="https://unpkg.com/kursor"></script>
   </head>
 
   <body>
@@ -27,40 +30,30 @@
             <img src="/assets/svg/logo.svg" alt="logo-icon" />
           </a>
         </div>
-        <div class="menu" id="menu">
-          <a href="javascript: history.go(-1)" title="Menu Icon">
-            <img
-              id="menu"
-              class="menu2"
-              src="/assets/svg/menu-icon.svg"
-              alt="menu-icon"
-            />
+        <div class="menu">
+          <a href="/work.html" title="Exit Icon">
+            <img id="menu" src="/assets/svg/exit.svg" alt="exit-icon" />
           </a>
         </div>
       </div>
     </header>
 
     <!-- main contains-->
-    <main class="container">
-      <canvas id="noise" class="noise"></canvas>
-      <div class="menu-bar">
-        <div class="menu-list">
-          <span class="work">
-            <a href="/work.html">work</a>
-          </span>
-          <span class="contact">
-            <a href="/contact.html">contact</a>
-          </span>
-          <span class="about">
-            <a href="/about.html">about</a>
-          </span>
-        </div>
-      </div>
-    </main>
+    <main class="container"></main>
+    <!-- Mouse -->
+    <section id="animated-mouse" class="demo">
+        <a href="#thanks"><span></span></a>
+    <!-- welcome-->
+
+    
+
+
     <!-- Footer-->
     <footer>
       <div class="container footer-lightmode">
+        <hr class="line-2" />
         <hr class="line" />
+
         <div class="lower-footer">
           <span>DESIGNED BY MY 1ST PERSONARITY</span>
           <span>CODED BY MY 2ND PERSONARITY</span>
@@ -78,5 +71,11 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"
     ></script>
     <script src="/assets/js/script.js"></script>
+    <script src="https:unpkg.com/kursor"></script>
+    <script>
+      new kursor({
+        type: 2,
+      });
+    </script>
   </body>
 </html>
