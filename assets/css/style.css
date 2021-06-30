@@ -4,106 +4,34 @@
 }
 
 body {
-  background-color: #faf5ed;
+  min-height: 100vh;
+  background-color: #fefefe;
+  color: #000 !important;
 }
 
-/* BACKGROUND NOISE ---------------------- */
-/* BACKGROUND NOISE ---------------------- */
-
-.noise {
-  z-index: 100;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  pointer-events: none;
-  opacity: 0.03;
+body h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Montserrat !important;
 }
 
-/* SCROLL BUTTON ---------------------- */
-/* SCROLL BUTTON ---------------------- */
-
-.demo a {
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  z-index: 2;
-  display: inline-block;
+body p,
+a {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 1.2rem !important;
+  line-height: 2rem !important;
 }
 
-#animated-mouse a {
-  padding-top: 150px;
+.css-container {
+  margin: 0 auto;
+  width: 80vw;
 }
-#animated-mouse a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 30px;
-  height: 45px;
-  margin-left: -15px;
-  border: 2px solid #faf5ed;
-  border-radius: 15px;
-  box-sizing: border-box;
-}
-#animated-mouse a span::before {
-  position: absolute;
-  top: 8px;
-  left: 50%;
-  content: "";
-  width: 6px;
-  height: 6px;
-  margin-left: -3px;
-  background-color: #faf5ed;
-  border-radius: 100%;
-  -webkit-animation: sdb10 2s infinite;
-  animation: sdb10 2s infinite;
-  box-sizing: border-box;
-}
-@-webkit-keyframes sdb10 {
-  0% {
-    -webkit-transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    -webkit-transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sdb10 {
-  0% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-/* ANIMATED CURSOR ---------------------- */
-
-/* html {
-  cursor: none !important;
-} */
 
 /* ANIMATED FLOWERS ---------------------- */
 .rotate {
-  animation: rotation 5s infinite linear;
+  animation: rotation 5s linear infinite;
 }
 
 @keyframes rotation {
@@ -111,230 +39,471 @@ body {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(359deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* ANIMATED MOUSE FOR PROJECT PAGES ---------------------- */
+.intro {
+  display: flex;
+  padding: 100px;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content {
+  padding: 100px;
+}
+
+.scroll-btn {
+  animation: bounce 0.9s;
+  animation-duration: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate(0, 80px);
+  }
+  to {
+    transform: translate(0, 100px);
   }
 }
 
 /* HEADER  */
-header .navbar {
+
+#css-navbar {
+  background-color: #fefefe;
+  position: fixed;
+  transition: top 0.3s;
+  top: 0px;
+  z-index: 10;
+}
+
+header .css-navbar {
+  /* position: fixed; */
+
   text-align: center;
   display: flex;
   justify-content: space-between;
-  width: 1600px;
+  width: 80vw;
   height: 100px;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
-/* FOOTER */
+#css-navbar .menu {
+  display: flex;
+}
+
+#css-navbar .menu ul {
+  display: none;
+  font-size: 30px;
+  font-weight: bold;
+  list-style: none;
+}
+
+#css-navbar .menu ul li {
+  width: 150px;
+}
+
+#css-navbar .menu ul a {
+  color: black;
+  text-decoration: none;
+}
+
+#css-navbar .menu ul.show {
+  display: flex;
+}
+
+footer .line1,
+footer .line2,
+header .line-header {
+  width: 80vw;
+  border: 1px solid #000;
+  margin: 0px !important;
+  opacity: 100 !important;
+}
+
+/* FOOTER  */
 footer {
-  position: absolute;
-  bottom: 3rem;
-  width: 100vw;
+  padding-top: 10rem;
 }
 
-footer .container {
-  width: 1600px;
-}
-/* Hero Page */
-footer .line {
-  width: 1600px;
-  margin-bottom: 1rem;
-  border: 1px solid #221e1f;
-}
-
-/* Contact Page */
-footer .contact-rectangle {
-  width: 1600px;
-  height: 120px;
-  margin-bottom: 1rem;
-
-  border: 2px solid #221e1f;
-  box-sizing: border-box;
-}
-footer .lines {
-  position: absolute;
-  width: 1600px;
-  top: 30px;
-}
-footer #line1,
-#line2,
-#line3 {
-  position: absolute;
-  height: 60px;
-  border: 1px solid #221e1f;
-}
-footer #line1 {
-  /* left: 360px; */
-  left: 357px;
-}
-footer #line2 {
-  /* left: 800px; */
-  left: 781px;
-}
-footer #line3 {
-  /* left: 1220px; */
-  left: 1204px;
-}
-
-footer .contact-link {
-  position: absolute;
-  width: 1600px;
-  top: 40px;
-  text-align: center;
+.upper-footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   display: flex;
   justify-content: space-between;
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 30px;
-  letter-spacing: 0.1em;
-
-  color: #221e1f;
 }
 
-footer .gmail {
-  position: absolute;
-  /* left: 120px; */
-  left: 112px;
-}
-footer .behance {
-  position: absolute;
-  /* left: 500px; */
-  left: 469px;
-}
-footer .linkedin {
-  position: absolute;
-  /* left: 930px; */
-  left: 900px;
-}
-footer .resume {
-  position: absolute;
-  /* left: 1342px; */
-  left: 1325px;
-}
-
-.lower-footer,
-.lower-footer-work {
+.lower-footer {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
   display: flex;
   /* flex-basis: 200px; */
   justify-content: space-between;
-  width: 1600px;
+  width: 80vw;
   height: 13px;
 
-  font-family: "Karla";
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
-  /* letter-spacing: 0.05em; */
+  font-size: 1rem;
+  letter-spacing: 0.05em;
 
-  color: #221e1f;
-}
-
-.lower-footer-work span:nth-child(1) {
-  text-align: left;
-}
-
-.lower-footer-work span:nth-child(2) {
-  text-align: right;
-}
-
-.container {
-  margin: 0 auto;
-  width: 1600px;
+  color: #000000;
 }
 
 /* HERO PAGE ---------------------- */
 /* HERO PAGE ---------------------- */
+
+main .css-container {
+  position: static;
+}
+
+/* WELCOME section------------ */
+/* WELCOME section------------ */
 
 .hero-content {
-  position: absolute;
   margin: 0;
-  top: calc(50vh);
+  width: 80vw;
 }
+
+.content-wrap {
+  margin-top: 70vh;
+}
+
 .main-content {
   display: flex;
-  width: 1600px;
+  width: 80vw;
+  height: 180px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .content-style {
-  width: 1150px;
-  height: 366px;
-  left: 89px;
-  top: 569px;
-
   font-family: Montserrat;
   font-style: normal;
   font-weight: 900;
-  font-size: 100px;
-  line-height: 122px;
+  font-size: 4vw;
+  line-height: 5vw;
   letter-spacing: 0.02em;
 
   color: #ed9200;
 }
 
-.hi {
+.project-button {
+  position: relative;
+  /* display: flex; */
+}
+
+.mouse-button {
+  width: 30px;
   position: absolute;
-  width: 45px;
-  height: 45px;
-  left: 569px;
-  top: 284px;
+  top: 56px;
+  left: 52px;
 }
 
-.star {
-  position: absolute;
-  width: 83.84px;
-  height: 83.84px;
-  left: 550px;
-  top: 265px;
-}
+/* DIVIDER section------------ */
+/* DIVIDER section------------ */
 
-/* MENU PAGE ---------------------- */
-/* MENU PAGE ---------------------- */
-
-#menu img {
-  transform: rotate(180deg);
-}
-.menu-list {
-  margin: auto;
+.divider {
+  line-height: 60rem;
+  height: 60rem;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 400px;
-  width: 600px;
-  position: absolute;
-  top: calc(50vh - 200px);
-  left: calc(50vw - 300px);
 }
-.work a,
-.contact a,
-.about a {
+
+.divider img {
+  max-height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* PROJECT section------------ */
+/* PROJECT section------------ */
+
+.image-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: -2;
+  transform: translateY(10px);
+}
+
+#project-section {
+  padding-top: 12rem;
+  transform: translateY(-12rem);
+}
+
+.project-style {
+  height: 11rem;
+}
+
+.grid-container {
+  width: 80vw;
+  display: grid;
+  grid-template-rows: 50vh 50vh;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-container > div {
+  border: solid 1px black;
+}
+
+.menu-box {
+  /* pointer-events: none; */
+  overflow: hidden;
+  position: relative;
+}
+
+.menu-box.box-1:hover {
+  background: linear-gradient(to left, #ffd9ab, #a6caff);
+}
+.menu-box.box-1:hover .menu-box-background {
+  background-image: url("../project/ecycle/ecycle-hero.png");
+}
+
+.menu-box.box-2:hover {
+  background: linear-gradient(to right, #fff8f5, #c92f00);
+}
+.menu-box.box-2:hover .menu-box-background {
+  background-image: url("../project/foodie/foodie-image.png");
+  background-size: 60%;
+}
+
+.menu-box.box-3:hover {
+  background: linear-gradient(to right, #727272, #f2f2f2);
+}
+.menu-box.box-3:hover .menu-box-background {
+  background-image: url("../project/citation/citation-hero.png");
+}
+
+.menu-box.box-4:hover {
+  background: linear-gradient(to left, #dd6243, #fdbf50);
+}
+.menu-box.box-4:hover .menu-box-background {
+  background-image: url("../project/pick-a-paw/pickapaw-hero.png");
+}
+
+.menu-box-filter {
+  height: 50vh;
+  width: 40vw;
+  position: absolute;
+  background-color: rgba(34, 30, 31, 0.2);
+  display: none;
+  z-index: 50;
+}
+.menu-box-background {
+  height: 50vh;
+  width: 40vw;
+  position: absolute;
+  background-color: transparent;
+  background-size: 35%;
+  background-position: right center;
+  background-repeat: no-repeat;
+  z-index: 5;
+}
+
+.menu-box:hover .menu-box-filter {
+  display: block;
+}
+
+.menu-box:hover .menu-box-subtitle,
+.menu-box:hover .menu-box-title,
+.menu-box:hover .menu-box-intro {
+  color: #ffffff !important;
+}
+
+.menu-box-content {
+  padding-left: 3vw;
+  padding-top: 3vw;
+  height: 100%;
+  z-index: 100;
+
+  position: relative;
+}
+
+.menu-box-subtitle {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1vw;
+  line-height: 27px;
+  /* identical to box height */
+  z-index: 100;
+  letter-spacing: 0.05em;
+  color: #000;
+}
+
+.menu-box-title {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 900;
-  font-size: 100px;
-  letter-spacing: 0.05em;
+  font-size: 3vw;
+  line-height: 8.5rem;
+  /* identical to box height */
 
-  color: #faf5ed;
+  letter-spacing: 0.02em;
+
+  color: #ed9200;
+}
+
+.menu-box-intro {
+  width: 30vw;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2vw;
+  line-height: 2.5vw;
+
+  color: #000;
+}
+
+.discover-button {
+  margin-top: 2.5rem;
+  position: absolute;
+  bottom: 3vw;
+  pointer-events: auto;
+  display: inline-block;
+}
+
+.arrow-button {
+  position: absolute;
+  top: 30px;
+  left: 35px;
+}
+
+.lock-button {
+  position: absolute;
+  top: 30px;
+  left: 33px;
+  height: 18px;
+}
+
+/* ABOUT section------------ */
+/* ABOUT section------------ */
+
+#about {
+  padding-top: 11rem;
+  transform: translateY(-11rem);
+}
+
+.intro-page {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-between;
+}
+
+.intro-para {
+  padding-top: 4rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3vw;
+  line-height: 2vw;
+  letter-spacing: 0.02em;
+
+  color: #000;
+}
+
+.intro-image img {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* CONTACT section------------ */
+/* COMTACT section------------ */
+
+.contact-style {
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 8vw;
+  line-height: 5vw;
+  letter-spacing: 0.02em;
+  padding-top: 15vw;
+  padding-bottom: 2vw;
+
+  color: #ed9200;
+}
+
+.contact-line1 {
+  text-align: center;
+  /* padding-top: 2vw; */
+  padding-bottom: 5vw;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.15vw;
+  line-height: 2vw;
+  /* identical to box height */
+
+  color: #000;
+}
+
+.contact-line2 {
+  text-align: center;
+  font-family: Poppins;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1vw;
+  /* identical to box height */
+
+  color: #000;
+}
+
+#for-tam {
   text-decoration: none;
 }
 
-.work a:hover,
-.contact a:hover,
-.about a:hover {
-  color: #ed9200;
-  /* -webkit-text-fill-color: #ed9200; */
-}
-/* 
-.menu-bar {
-  position: absolute;
-  margin: 0;
-  top: calc(50vh - 185px);
-} */
+.contact-rectangle {
+  width: 80vw;
+  height: 35vw;
+  width: 80vw;
 
-/* CONTACT PAGE ---------------------- */
-/* CONTACT PAGE ---------------------- */
+  border: 2px solid #000000;
+  box-sizing: border-box;
+}
+
+.contact-link {
+  position: relative;
+  width: 80vw;
+  height: 10vh;
+  border: 2px solid #000000;
+  border-top-style: none;
+  box-sizing: border-box;
+}
+
+.all-links {
+  display: inline-block;
+  vertical-align: middle;
+  justify-content: space-between;
+}
+
+.contact-link > div {
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
 
 /* Hover Mouse */
 
@@ -350,7 +519,7 @@ footer .resume {
 .behance a,
 .linkedin a,
 .resume a {
-  color: #221e1f;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -368,1027 +537,5 @@ footer .resume {
 }
 /* Hover Mouse */
 
-.contact-page {
-  position: absolute;
-  margin: 0;
-  top: 331px;
-  /* width: 1600px; */
-  /* height: 496px; */
-}
-.contact-line1 {
-  height: 253px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 200px;
-
-  color: #ed9200;
-}
-
-.contact-line2 {
-  height: 220px;
-
-  font-family: Karla;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26.5px;
-
-  color: #221e1f;
-}
-
-.contact-line3 {
-  font-family: Karla;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 20px;
-
-  color: #221e1f;
-}
-
-.flower-contact {
-  position: absolute;
-  width: 155px;
-  height: 155px;
-  left: 810px;
-  top: 60px;
-}
-
-.smile-face {
-  position: absolute;
-  width: 70px;
-  height: 56px;
-  left: 850px;
-  top: 110px;
-}
-
-/* ABOUT PAGE ---------------------- */
-/* ABOUT PAGE ---------------------- */
-
-.about-rectangle {
-  position: absolute;
-  width: 1600px;
-  height: 809px;
-  bottom: 5rem;
-
-  border: 2px solid #221e1f;
-  box-sizing: border-box;
-}
-
-.line-about {
-  position: absolute;
-  height: 805px;
-  left: 1000px;
-  border: 1px solid #221e1f;
-}
-
-.intro-page {
-  position: absolute;
-  width: 888px;
-  height: 650px;
-  left: 90px;
-}
-
-.title-about {
-  position: absolute;
-  height: 110px;
-  top: 90px;
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 82px;
-  line-height: 110px;
-  letter-spacing: 1.5px;
-
-  color: #ed9200;
-}
-
-.intro-para {
-  position: absolute;
-  width: 888px;
-  height: 479px;
-  top: 230px;
-
-  font-family: Karla;
-  font-size: 30px;
-  line-height: 55px;
-
-  color: #221e1f;
-}
-
-.flower-icon2 {
-  position: absolute;
-  width: 128px;
-  height: 128px;
-  left: 935px;
-  top: 330px;
-}
-
-.smile-face2 {
-  position: absolute;
-  width: 41px;
-  height: 34px;
-  left: 978px;
-  top: 380px;
-}
-
-.rectangle-photo1 {
-  position: absolute;
-  width: 400px;
-  height: 580px;
-  left: 1090px;
-  top: 130px;
-
-  border: 2px solid #ed9200;
-  box-sizing: border-box;
-}
-
-.rectangle-photo2 {
-  position: absolute;
-  width: 400px;
-  height: 580px;
-  left: 1110px;
-  top: 110px;
-
-  border: 2px solid #ba4a4a;
-  box-sizing: border-box;
-}
-
-.noted-photo {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 72px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #221e1f;
-
-  transform: rotate(90deg);
-}
-
-.first-noted {
-  position: absolute;
-  width: 445px;
-  height: 98px;
-  left: 910px;
-  top: -600px;
-}
-
-.second-noted {
-  position: absolute;
-  width: 553px;
-  height: 98px;
-  left: 960px;
-  top: -520px;
-}
-
-/* WORK PAGE ---------------------- */
-/* WORK PAGE ---------------------- */
-
-.noti {
-  position: absolute;
-  width: 1000px;
-  height: 98px;
-  left: 487px;
-  top: 491px;
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 80px;
-  line-height: 98px;
-  /* identical to box height */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.05em;
-
-  color: #221e1f;
-}
-
-.back a {
-  position: absolute;
-  width: 709px;
-  height: 98px;
-  left: 605px;
-  top: 875px;
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 80px;
-  line-height: 98px;
-  /* identical to box height */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #ba4a4a;
-  text-decoration: none;
-}
-
-/* WORK PAGE ---------------------- */
-/* WORK PAGE ---------------------- */
-
-div.menu-box-container {
-  overflow: auto;
-  white-space: nowrap;
-  overflow-x: hidden;
-}
-
-.menu-box-container {
-  position: absolute;
-  width: 1600px;
-  /* top: 189px; */
-  bottom: 5rem;
-  border-right: 2px solid #221e1f;
-  border-left: 2px solid #221e1f;
-}
-
-#menu-box-wrap {
-  display: flex;
-}
-
-li,
-ul {
-  list-style: none;
-  list-style-position: initial;
-  list-style-image: initial;
-  list-style-type: none;
-}
-
-.menu-box {
-  /* position: relative; */
-  /* float: left; */
-  width: 350px;
-  height: 800px;
-  border: 2px solid #221e1f;
-  border-left: none;
-  box-sizing: border-box;
-}
-
-.menu-box-no {
-  position: relative;
-  width: 190px;
-  height: 480px;
-  margin: 10rem 5rem 0 5rem;
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 200px;
-  line-height: 305px;
-}
-
-.menu-box-title {
-  /* position: absolute; */
-  /* width: 240px; */
-  /* height: 30px; */
-  /* margin: 0 0 0 3vw; */
-  /* top: 55vh; */
-  margin-left: 5rem;
-  margin-bottom: 1rem;
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 25px;
-  line-height: 30px;
-  /* identical to box height */
-}
-
-.menu-box-subtitle {
-  margin-left: 5rem;
-
-  font-family: Karla;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 19px;
-  /* identical to box height */
-}
-
-.box-8 {
-  border-right: none;
-}
-
-.box-1:hover {
-  background: linear-gradient(25deg, #d7a4f9, #fca3c4);
-}
-.box-2:hover {
-  background: linear-gradient(25deg, #a6caff, #ffd9ab);
-}
-.box-3:hover {
-  background: linear-gradient(25deg, #727272, #f7f6f4);
-}
-.box-4:hover {
-  background: linear-gradient(25deg, #c92f00, #fff8f5);
-}
-.box-5:hover {
-  background: linear-gradient(25deg, #def2fd, #dac4df);
-}
-.box-6:hover {
-  background: linear-gradient(25deg, #660a0a, #f99a10);
-}
-.box-7:hover {
-  background: linear-gradient(25deg, #f99a10, #660a0a);
-}
-.box-8:hover {
-  background: linear-gradient(25deg, #f99a10, #fff2e9);
-}
-
-.menu-box-no {
-  overflow: hidden;
-}
-.menu-box a {
-  text-decoration: none;
-}
-.menu-box-content {
-  color: #221e1f;
-}
-.menu-box:hover .menu-box-content {
-  color: #faf5ed;
-}
-/* .menu-box .bg-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateX(-100%);
-  transition: 0.5s all linear;
-  width: 100%;
-  z-index: 10;
-}
-.menu-box:hover .bg-img {
-  transform: translate(0);
-}
-.menu-box:hover span {
-  display: none;
-} */
-
-/* PROJECT PAGES ---------------------- */
-/* PROJECT PAGES ---------------------- */
-
-/* ------------------------------------------- */
-/* ------------------------------------------- */
-/* ------------------------------------------- */
-
-@media screen and (max-width: 1536px) {
-  .container {
-    margin: 0 auto;
-    width: 1360px;
-  }
-
-  /* HEADER  */
-  header .navbar {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    width: 1360px;
-    height: 100px;
-    margin-top: 3rem;
-  }
-
-  header .logo img,
-  header .menu img {
-    height: 48px;
-  }
-
-  /* FOOTER */
-  footer {
-    position: absolute;
-    bottom: 3rem;
-    width: 100vw;
-  }
-
-  footer .container {
-    width: 1360px;
-  }
-  /* Hero Page */
-  footer .line {
-    width: 1360px;
-    margin-bottom: 1rem;
-    border: 1px solid #221e1f;
-  }
-
-  /* Contact Page */
-  footer .contact-rectangle {
-    width: 1360px;
-    height: 88px;
-    margin-bottom: 1rem;
-
-    border: 2px solid #221e1f;
-    box-sizing: border-box;
-  }
-  footer .lines {
-    position: absolute;
-    width: 1360px;
-    top: 25px;
-  }
-  footer #line1,
-  #line2,
-  #line3 {
-    position: absolute;
-    height: 40px;
-    border: 1px solid #221e1f;
-  }
-  footer #line1 {
-    left: 309px;
-  }
-  footer #line2 {
-    left: 666px;
-  }
-  footer #line3 {
-    left: 1022px;
-  }
-
-  footer .contact-link {
-    position: absolute;
-    width: 1360px;
-    top: 30px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 25px;
-    letter-spacing: 0.1em;
-
-    color: #221e1f;
-  }
-
-  footer .gmail {
-    position: absolute;
-    left: 107px;
-  }
-  footer .behance {
-    position: absolute;
-    left: 416px;
-  }
-  footer .linkedin {
-    position: absolute;
-    left: 773px;
-  }
-  footer .resume {
-    position: absolute;
-    left: 1129px;
-  }
-
-  .lower-footer,
-  .lower-footer-work {
-    display: flex;
-    /* flex-basis: 200px; */
-    justify-content: space-between;
-    width: 1360px;
-    height: 13px;
-
-    font-family: "Karla";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    /* letter-spacing: 0.05em; */
-
-    color: #221e1f;
-  }
-
-  /* HERO PAGE ---------------------- */
-  /* HERO PAGE ---------------------- */
-
-  .hero-content {
-    position: absolute;
-    margin: 0;
-    top: calc(50vh);
-  }
-  .main-content {
-    display: flex;
-    width: 1360px;
-  }
-
-  .content-style {
-    width: 920px;
-    height: 275px;
-    left: 88px;
-    top: 447px;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 80px;
-    line-height: 88px;
-    letter-spacing: 0.02em;
-
-    color: #ed9200;
-  }
-
-  .hi {
-    position: absolute;
-    left: 458px;
-    top: 198px;
-  }
-  .hi img {
-    width: 35px;
-    height: 35px;
-  }
-
-  .star {
-    position: absolute;
-    left: 440px;
-    top: 180px;
-  }
-
-  .star img {
-    width: 70px;
-    height: 70px;
-  }
-
-  /* MENU PAGE ---------------------- */
-  /* MENU PAGE ---------------------- */
-
-  .menu-list {
-    height: 330px;
-  }
-
-  .work a,
-  .contact a,
-  .about a {
-    font-size: 80px;
-  }
-
-  /* CONTACT PAGE ---------------------- */
-  /* CONTACT PAGE ---------------------- */
-
-  .contact-page {
-    position: absolute;
-    width: 1017px;
-    height: 344px;
-    left: 88px;
-    top: 318px;
-  }
-
-  .contact-line1 {
-    font-size: 140px;
-    height: 175px;
-  }
-  .contact-line2 {
-    font-size: 19px;
-    height: 154px;
-  }
-  .contact-line3 {
-    font-size: 16px;
-    height: 19px;
-  }
-
-  .flower-contact {
-    left: 570px;
-    top: 40px;
-  }
-  .flower-contact img {
-    width: 100px;
-    height: 100px;
-  }
-
-  .smile-face {
-    left: 597px;
-    top: 74px;
-  }
-  .smile-face img {
-    width: 45px;
-  }
-
-  /* ABOUT PAGE ---------------------- */
-  /* ABOUT PAGE ---------------------- */
-
-  .about-rectangle {
-    width: 1360px;
-    height: 650px;
-  }
-
-  .line-about {
-    height: 646px;
-    left: 840px;
-  }
-
-  .intro-page {
-    width: 650px;
-    height: 600px;
-    left: 90px;
-  }
-
-  .title-about {
-    top: 70px;
-    height: 79px;
-    font-size: 65px;
-    line-height: 79px;
-  }
-
-  .intro-para {
-    top: 200px;
-    font-size: 23px;
-    line-height: 42px;
-    letter-spacing: 0.02em;
-  }
-
-  .flower-icon2 {
-    top: 260px;
-    left: 775px;
-  }
-
-  .smile-face2 {
-    top: 308px;
-    left: 819px;
-  }
-
-  .rectangle-photo1,
-  .rectangle-photo2 {
-    width: 329px;
-    height: 470px;
-  }
-
-  .rectangle-photo1 {
-    top: 95px;
-    left: 930px;
-  }
-
-  .rectangle-photo2 {
-    top: 80px;
-    left: 950px;
-  }
-
-  .noted-photo {
-    font-size: 60px;
-  }
-
-  .first-noted {
-    top: -500px;
-    left: 720px;
-  }
-
-  .second-noted {
-    top: -435px;
-    left: 740px;
-  }
-
-  /* WORK PAGE ---------------------- */
-  /* WORK PAGE ---------------------- */
-
-  .menu-box-container {
-    width: 1360px;
-  }
-
-  .menu-box {
-    width: 300px;
-    height: 650px;
-  }
-
-  .menu-box-no {
-    width: 235px;
-    height: 244px;
-    margin: 7rem 0 0 4rem;
-
-    font-size: 170px;
-  }
-
-  .menu-box-title {
-    margin-left: 4rem;
-    margin-top: 10rem;
-    margin-bottom: 0.5rem;
-
-    font-size: 23px;
-    line-height: 20px;
-  }
-
-  .menu-box-subtitle {
-    margin-left: 4rem;
-    font-size: 14px;
-  }
-}
-
-/* ------------------------------------------- */
-/* ------------------------------------------- */
-/* ------------------------------------------- */
-
-@media screen and (max-width: 1366px) {
-  .container {
-    margin: 0 auto;
-    width: 1200px;
-  }
-
-  /* HEADER  */
-  header .navbar {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    width: 1200px;
-    height: 50px;
-    margin-top: 3rem;
-  }
-
-  /* FOOTER */
-  footer {
-    position: absolute;
-    bottom: 2.5rem;
-    width: 100vw;
-  }
-
-  header .logo img,
-  header .menu img {
-    height: 45px;
-  }
-
-  footer .container {
-    width: 1200px;
-  }
-
-  /* HERO PAGE */
-  footer .line {
-    width: 1200px;
-    margin-bottom: 1rem;
-    border: 1px solid #221e1f;
-  }
-
-  /* CONTACT PAGE */
-  footer .contact-rectangle {
-    width: 1200px;
-    height: 75px;
-    margin-bottom: 1rem;
-
-    border: 2px solid #221e1f;
-    box-sizing: border-box;
-  }
-  footer .lines {
-    position: absolute;
-    width: 1200px;
-    top: 17px;
-  }
-  footer #line1,
-  #line2,
-  #line3 {
-    position: absolute;
-    height: 40px;
-    border: 1px solid #221e1f;
-  }
-  footer #line1 {
-    left: 270px;
-  }
-  footer #line2 {
-    left: 587px;
-  }
-  footer #line3 {
-    left: 903px;
-  }
-
-  footer .contact-link {
-    position: absolute;
-    width: 1200px;
-    top: 25px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 23px;
-    letter-spacing: 0.1em;
-
-    color: #221e1f;
-  }
-
-  footer .gmail {
-    position: absolute;
-    left: 88px;
-  }
-  footer .behance {
-    position: absolute;
-    left: 357px;
-  }
-  footer .linkedin {
-    position: absolute;
-    left: 674px;
-  }
-  footer .resume {
-    position: absolute;
-    left: 1000px;
-  }
-
-  .lower-footer,
-  .lower-footer-work {
-    display: flex;
-    /* flex-basis: 200px; */
-    justify-content: space-between;
-    width: 1200px;
-    height: 13px;
-
-    font-family: "Karla";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    /* letter-spacing: 0.05em; */
-
-    color: #221e1f;
-  }
-
-  /* HERO PAGE ---------------------- */
-  /* HERO PAGE ---------------------- */
-
-  .hero-content {
-    position: absolute;
-    margin: 0;
-    top: calc(50vh);
-  }
-  .main-content {
-    display: flex;
-    width: 1200px;
-  }
-
-  .content-style {
-    width: 890px;
-    height: 237px;
-    left: 83px;
-    top: 447px;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 70px;
-    line-height: 85px;
-    letter-spacing: 0.02em;
-
-    color: #ed9200;
-  }
-
-  .hi {
-    position: absolute;
-    left: 405px;
-    top: 195px;
-  }
-  .hi img {
-    width: 30px;
-    height: 30px;
-  }
-
-  .star {
-    position: absolute;
-    left: 390px;
-    top: 180px;
-  }
-
-  .star img {
-    width: 60px;
-    height: 60px;
-  }
-
-  /* CONTACT PAGE ---------------------- */
-  /* CONTACT PAGE ---------------------- */
-
-  .contact-page {
-    position: absolute;
-    width: 937px;
-    height: 309px;
-    left: 83px;
-    top: 260px;
-  }
-
-  .contact-line1 {
-    font-size: 130px;
-    height: 158px;
-  }
-  .contact-line2 {
-    font-size: 17.5px;
-    height: 145px;
-  }
-  .contact-line3 {
-    font-size: 14px;
-    height: 16px;
-  }
-
-  .flower-contact {
-    left: 532px;
-    top: 40px;
-  }
-  .flower-contact img {
-    width: 90px;
-    height: 90px;
-  }
-
-  .smile-face {
-    left: 558px;
-    top: 70px;
-  }
-  .smile-face img {
-    width: 40px;
-  }
-
-  /* ABOUT PAGE ---------------------- */
-  /* ABOUT PAGE ---------------------- */
-
-  .about-rectangle {
-    width: 1200px;
-    height: 550px;
-    margin-bottom: -0.7rem;
-  }
-
-  .line-about {
-    height: 546px;
-    left: 760px;
-  }
-
-  .intro-page {
-    left: 80px;
-  }
-
-  .title-about {
-    top: 60px;
-    font-size: 60px;
-    line-height: 73px;
-  }
-
-  .intro-para {
-    top: 160px;
-    /* height: 326px; */
-    font-size: 21px;
-    line-height: 37px;
-    letter-spacing: 0.02em;
-  }
-
-  .flower-icon2 {
-    top: 200px;
-    left: 695px;
-  }
-
-  .smile-face2 {
-    top: 249px;
-    left: 738px;
-  }
-
-  .rectangle-photo1,
-  .rectangle-photo2 {
-    width: 270px;
-    height: 400px;
-  }
-
-  .rectangle-photo1 {
-    top: 85px;
-    left: 835px;
-  }
-
-  .rectangle-photo2 {
-    top: 70px;
-    left: 850px;
-  }
-
-  .noted-photo {
-    font-size: 50px;
-  }
-
-  .first-noted {
-    top: -445px;
-    left: 600px;
-  }
-
-  .second-noted {
-    top: -390px;
-    left: 620px;
-  }
-
-  /* WORK PAGE ---------------------- */
-  /* WORK PAGE ---------------------- */
-
-  .menu-box-container {
-    width: 1200px;
-  }
-
-  .menu-box {
-    width: 270px;
-    height: 550px;
-  }
-
-  .menu-box-no {
-    position: relative;
-    width: 130px;
-    height: 220px;
-    margin: 4rem 5rem 0 3rem;
-
-    font-size: 160px;
-  }
-
-  .menu-box-title {
-    margin-left: 3rem;
-    margin-top: 9rem;
-    margin-bottom: 0.5rem;
-
-    font-size: 21px;
-    line-height: 20px;
-  }
-
-  .menu-box-subtitle {
-    margin-left: 3rem;
-    font-size: 12px;
-  }
-}
+/* BOOTSTRAP SECTION --------------- */
+/* BOOTSTRAP SECTION --------------- */

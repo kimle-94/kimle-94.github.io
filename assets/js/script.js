@@ -1,22 +1,16 @@
-// let btnRed = document.querySelector('button');
+// let menu = document.querySelector("#menu");
+// let isdown = false;
+// menu.addEventListener("click", () => {
+//   isdown = !isdown;
+//   if (isdown) {
+//     menu.src = "/assets/svg/menu-red.svg";
+//   } else {
+//     menu.src = "/assets/svg/menu-black.svg";
+//   }
 
-// btnRed.addEventListener('click', () => {
-//     window.history.back();
+//   let invisible = document.querySelector("#invisible");
+//   invisible.classList.toggle("visible");
 // });
-
-let menu = document.querySelector("#menu");
-let isdown = false;
-menu.addEventListener("click", () => {
-  isdown = !isdown;
-  if (isdown) {
-    menu.src = "/assets/svg/menu-red.svg";
-  } else {
-    menu.src = "/assets/svg/menu-black.svg";
-  }
-
-  let invisible = document.querySelector("#invisible");
-  invisible.classList.toggle("visible");
-});
 
 $(function () {
   $("body#work-page").mousewheel(function (event, delta) {
@@ -26,107 +20,35 @@ $(function () {
   });
 });
 
-// BACKGROUND NOISE
-// BACKGROUND NOISE
-
-const noise = () => {
-  let canvas, ctx;
-
-  let wWidth, wHeight;
-
-  let noiseData = [];
-  let frame = 0;
-
-  let loopTimeout;
-
-  // Create Noise
-  const createNoise = () => {
-    const idata = ctx.createImageData(wWidth, wHeight);
-    const buffer32 = new Uint32Array(idata.data.buffer);
-    const len = buffer32.length;
-
-    for (let i = 0; i < len; i++) {
-      if (Math.random() < 0.5) {
-        buffer32[i] = 0xff000000;
-      }
-    }
-
-    noiseData.push(idata);
-  };
-
-  // Play Noise
-  const paintNoise = () => {
-    if (frame === 9) {
-      frame = 0;
-    } else {
-      frame++;
-    }
-
-    ctx.putImageData(noiseData[frame], 0, 0);
-  };
-
-  // Loop
-  const loop = () => {
-    paintNoise(frame);
-
-    loopTimeout = window.setTimeout(() => {
-      window.requestAnimationFrame(loop);
-    }, 1000 / 25);
-  };
-
-  // Setup
-  const setup = () => {
-    wWidth = window.innerWidth;
-    wHeight = window.innerHeight;
-
-    canvas.width = wWidth;
-    canvas.height = wHeight;
-
-    for (let i = 0; i < 10; i++) {
-      createNoise();
-    }
-
-    loop();
-  };
-
-  // Reset
-  let resizeThrottle;
-  const reset = () => {
-    window.addEventListener(
-      "resize",
-      () => {
-        window.clearTimeout(resizeThrottle);
-
-        resizeThrottle = window.setTimeout(() => {
-          window.clearTimeout(loopTimeout);
-          setup();
-        }, 200);
-      },
-      false
-    );
-  };
-
-  // Init
-  const init = (() => {
-    canvas = document.getElementById("noise");
-    ctx = canvas.getContext("2d");
-
-    setup();
-  })();
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("css-navbar").style.top = "0";
+  } else {
+    document.getElementById("css-navbar").style.top = "-10rem";
+  }
+  prevScrollpos = currentScrollPos;
 };
 
-noise();
+let showNavbar = false;
+function toggleMenu() {
+  showNavbar = !showNavbar;
+  $('#css-navbar .menu ul').toggleClass('show')
+  let img = $('#menu');
+  if (showNavbar) {
+    img.attr('src', '/assets/svg/exit.svg');
+  } else {
+    img.attr('src', '/assets/svg/menu.svg');
+  }
+}
 
-/* SCROLL BUTTON -------------------- */
-/* SCROLL BUTTON -------------------- */
+$('#navbar-show').click(function(e) {
+  e.preventDefault();
 
-// $(function () {
-//   $("a[href*=#]").on("click", function (e) {
-//     e.preventDefault();
-//     $("html, body").animate(
-//       { scrollTop: $($(this).attr("href")).offset().top },
-//       500,
-//       "linear"
-//     );
-//   });
-// });
+  toggleMenu();
+})
+
+$('#css-navbar .menu  ul li a').click(function() {
+  toggleMenu();
+})
