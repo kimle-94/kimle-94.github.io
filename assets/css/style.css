@@ -29,6 +29,30 @@ a {
   width: 80vw;
 }
 
+/* ORGANIMI PROJECT ---------------------- */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 1000px;
+}
+
+.col-left {
+  width: 50%;
+  padding-right: 50px;
+}
+.col-right {
+  width: 50%;
+  padding-left: 50px;
+}
+.col-3 {
+  width: 100%;
+}
+
+li {
+  font-size: 1vw !important;
+}
+
 /* ANIMATED FLOWERS ---------------------- */
 .rotate {
   animation: rotation 5s linear infinite;
@@ -133,6 +157,10 @@ footer {
   padding-top: 10rem;
 }
 
+#homepage-footer {
+  padding-top: 0;
+}
+
 .upper-footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -212,8 +240,8 @@ main .css-container {
 /* DIVIDER section------------ */
 
 .divider {
-  line-height: 60rem;
-  height: 60rem;
+  line-height: 70rem;
+  height: 70rem;
   text-align: center;
 }
 
@@ -237,6 +265,7 @@ main .css-container {
 #project-section {
   padding-top: 12rem;
   transform: translateY(-12rem);
+  margin-bottom: -12rem;
 }
 
 .project-style {
@@ -246,7 +275,7 @@ main .css-container {
 .grid-container {
   width: 80vw;
   display: grid;
-  grid-template-rows: 50vh 50vh;
+  grid-template-rows: 50vh 50vh 50vh;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -261,31 +290,50 @@ main .css-container {
 }
 
 .menu-box.box-1:hover {
-  background: linear-gradient(to left, #ffd9ab, #a6caff);
+  background: linear-gradient(to left, #d7a4f9, #fca3c4);
 }
 .menu-box.box-1:hover .menu-box-background {
-  background-image: url("../project/ecycle/ecycle-hero.png");
+  background-image: url("../project/ally/ally-hero.png");
 }
 
 .menu-box.box-2:hover {
-  background: linear-gradient(to right, #fff8f5, #c92f00);
+  background: linear-gradient(
+    to left,
+    rgba(252, 100, 0, 0.8),
+    rgba(0, 136, 200, 0.6)
+  );
 }
 .menu-box.box-2:hover .menu-box-background {
+  background-image: url("../project/organimi/organimi-hero.png");
+  background-size: 70%;
+}
+
+.menu-box.box-3:hover {
+  background: linear-gradient(to left, #ffd9ab, #a6caff);
+}
+.menu-box.box-3:hover .menu-box-background {
+  background-image: url("../project/ecycle/ecycle-hero.png");
+}
+
+.menu-box.box-4:hover {
+  background: linear-gradient(to right, #fff8f5, #c92f00);
+}
+.menu-box.box-4:hover .menu-box-background {
   background-image: url("../project/foodie/foodie-image.png");
   background-size: 60%;
 }
 
-.menu-box.box-3:hover {
+.menu-box.box-5:hover {
   background: linear-gradient(to right, #727272, #f2f2f2);
 }
-.menu-box.box-3:hover .menu-box-background {
+.menu-box.box-5:hover .menu-box-background {
   background-image: url("../project/citation/citation-hero.png");
 }
 
-.menu-box.box-4:hover {
+.menu-box.box-6:hover {
   background: linear-gradient(to left, #dd6243, #fdbf50);
 }
-.menu-box.box-4:hover .menu-box-background {
+.menu-box.box-6:hover .menu-box-background {
   background-image: url("../project/pick-a-paw/pickapaw-hero.png");
 }
 
@@ -390,6 +438,7 @@ main .css-container {
 #about {
   padding-top: 11rem;
   transform: translateY(-11rem);
+  margin-bottom: -11rem;
 }
 
 .intro-page {
