@@ -227,10 +227,10 @@ input[type="checkbox"]:checked ~ label > .background-img {
 }
 
 .other-screen {
-  max-width: 1330px;
+  max-width: 1300px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 160px 180px 200px 180px 160px;
+  grid-template-columns: repeat(5, 1fr);
   align-items: center;
   justify-content: space-around;
 }
