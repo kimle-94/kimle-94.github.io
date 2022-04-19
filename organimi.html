@@ -2,651 +2,443 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Organimi - Redesign Dashboard &#8211; Kim Le</title>
+    <title>Kim Le &#8211; Product Designer</title>
     <link rel="icon" type="svg" href="/assets/svg/favicon.svg" />
 
     <!-- Import Fonts here -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link 
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" 
-      rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
 
     <!-- Import Bootstrap here -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
 
-    <!-- CSS Link here -->
+    <!-- Css Link here -->
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <style>
-      #css-navbar{
-        background-color: transparent !important;
-      }
-    </style>
   </head>
-
   <body>
-    <!-- Header and Navbar-->
-    <header class="css-container">
-      <div id="css-navbar">
-        <div class="css-navbar">
-          <div class="logo">
-            <a href="/" title="Kim Le Porfolio">
-              <img src="/assets/svg/logo.svg" alt="logo-icon" />
-            </a>
-          </div>
-          <div class="exit">
-            <a href="https://kim-le.com/#project-section" title="Exit Icon">
-              <img id="menu" src="/assets/svg/exit.svg" alt="exit-icon" />
-            </a>
-          </div>
+    <!-- Header and Navbar -->
+    <header class="container header-container">
+      <div id="navbar-project">
+        <div class="line-menu"></div>
+        <div class="navbar-project">
+          <a href="work.html" class="secondary button">Back</a>
+          <a style="font-weight: bolder" class="primary">ORGANIMI</a>
+          <a href="index.html" class="secondary button">Home</a>
         </div>
-        <hr class="line-header" />
+        <div class="line-project-bottom secondary"></div>
       </div>
     </header>
 
-    <!-- main contains-->
-    <main class="clearfix site-wrapper" id="siteWrapper">
-
-      <!-- INTRO section-->
-
-      <div class="intro" style="background: linear-gradient(25deg, #FC6400, #0088C8);">
-        <div class="intro-part containter mx-auto">
-          <h1 style=" z-index: 3;
-                  position: absolute;
-                  top: 50%;
-                  left: 50%;
-                  transform: translate(-50%, -50%);
-                  text-align: center; 
-                  font-size: 15vw !important;
-                  color: #BA4A4A !important;
-                  transition-timing-function: ease; 
-                  transition-duration: 0.45s; 
-                  transition-delay: 0.575s;" 
-                  class="preScale scaleIn mb-5 fw-bold">
-                  organimi
-          </h1>
-          <div class="image-part img-fluid" >
-              <img src="/assets/project/organimi/organimi-hero.png" 
-              style="width: 40vw" alt="" />
+    <!-- Main contents -->
+    <main class="container">
+      <section class="container-for-project">
+        <!-- INTRO section-->
+        <section id="intro-section" class="intro-section">
+          <div class="project-intro">
+            <img
+              src="assets/project/organimi/hero-img.png"
+              class="web-hero-img"
+              alt=""
+            />
+            <h4 class="project-name">ORGANIMI</h4>
           </div>
-        </div>
-
-        <a href="#role-section" title="" class="scroll-btn"> 
-          <img src="/assets/svg/mouse.svg" alt="" style="width:3vw; padding-top:5vh"/>
-        </a>
-      </div>
-
-      <!-- WHOLE PROJECT section-->
-
-      <!-- ROLES section-->
-      <section
-        id="role-section"
-        class="role-section layout-engine-section background-width--full-bleed content-width--wide horizontal-alignment--center vertical-alignment--middle black-bold"
-        data-section-id="5fb5f025513b754ef7259daa"
-        data-controller="SectionWrapperController, MagicPaddingController"
-        data-current-styles='{
-  "imageOverlayOpacity": 0.15,
-  "backgroundWidth": "background-width--full-bleed",
-  "sectionHeight": "section-height--custom",
-  "customSectionHeight": 40,
-  "horizontalAlignment": "horizontal-alignment--center",
-  "verticalAlignment": "vertical-alignment--middle",
-  "contentWidth": "content-width--wide",
-  "sectionTheme": "black-bold",
-  "sectionAnimation": "none",
-  "backgroundMode": "image"
-}'
-        data-animation="none"
-        style="min-height: 30rem"
-        data-controllers-bound="SectionWrapperController, MagicPaddingController"
-        data-active="true"
-      >
-        <div
-          class="section-background"
-          style="padding-top: 10rem; padding-bottom: 0rem"
-        >
-          <div
-            id="intro"
-            class="containter mx-auto"
-            style="width: 1000px; padding-bottom: 10rem"
-          >
-            <div>
-              <p style="font-size: 1rem !important;"> <a style="color: #000;">MY ROLE</a><br />
-              <br />
-              UI Design <br /><br> </p>
-            </div>
-            <div>
-              <p style="font-size: 1rem !important;"> <a style="color: #000;">TOOLS USED</a><br />
-              <br />
-              Adobe XD<br />
-              Adobe Illustrator</p>
-            </div>
-            <div>
-              <p style="font-size: 1rem !important;"> <a style="color: #000;">RESPONSIBILITIES</a><br />
-              <br />
-              User Interface Design <br />
-              Graphic Icon Set</p>
-            </div>
-            <div>
-              <p style="font-size: 1rem !important;"> <a style="color: #000;">DURATION</a><br />
-              <br />
-              1 week <br />
-              November 2020</p>
-            </div>
+          <div class="design-process">
+            <img
+              src="assets/project/organimi/design-process.svg"
+              class="img-project"
+              alt=""
+            />
           </div>
+        </section>
 
-          <div
-            class="containter mx-auto"
-            style="width: 1200px; padding-bottom: 10rem"
-          >
-            <hr style="border: 1px solid #000" />
-          </div>
+        <!-- WHOLE PROJECT section-->
 
-          <div
-            id="design-process"
-            class="containter mx-auto"
-            style="width: 1000px"
-          >
-            <div class="process">
-              <h4 style="color:#ba4a4a">DESIGN PROCESS</h4>
-            </div>
-            <div></div>
-
-            <div>
-              <p style="font-size: 1rem !important;"><a style="color: #000;">EMPATHIZE</a><br />
-              <br />
-              Background Research <br>
-              Dashboard Analysis</p>
-            </div>
-            <div>
-              <p style="font-size: 1rem !important;"><a style="color: #000;">IDENTIFY</a><br />
-              <br />
-              Design Layout <br>
-              Main Features</p> 
-            </div>
-            <div>
-              <p style="font-size: 1rem !important;"><a style="color: #000;">IDEATE</a><br />
-              <br />
-              Lo-fi Wireframes<br /><br></p> 
-            </div>
-            <div>
-              <p style="font-size: 1rem !important;"><a style="color: #000;">VERIFY</a><br />
-              <br />
-              Lead Design’s Feedbacks<br /><br /></p> 
-            </div>
-            <div>
-              <p style="font-size: 1rem !important;"><a style="color: #000;">GENERATE</a><br />
-              <br />
-              Hi-Fi Design<br /><br /></p> 
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- WHAT IS ORGANINI section-->
-      <section
-        id="what-is-organimi"
-        class="organimi-section layout-engine-section background-width--full-bleed content-width--wide horizontal-alignment--center vertical-alignment--middle black-bold"
-        data-section-id="5fb5f025513b754ef7259daa"
-        data-controller="SectionWrapperController, MagicPaddingController"
-        data-current-styles='{
-  "imageOverlayOpacity": 0.15,
-  "backgroundWidth": "background-width--full-bleed",
-  "sectionHeight": "section-height--custom",
-  "customSectionHeight": 40,
-  "horizontalAlignment": "horizontal-alignment--center",
-  "verticalAlignment": "vertical-alignment--middle",
-  "contentWidth": "content-width--wide",
-  "sectionTheme": "black-bold",
-  "sectionAnimation": "none",
-  "backgroundMode": "image"
-}'
-        data-animation="none"
-        style="min-height: 5rem"
-        data-controllers-bound="SectionWrapperController, MagicPaddingController"
-        data-active="true"
-      >
-        <div class="section-background" style="padding-bottom: 10rem"></div>
-
-        <div id="what-is-organimi" class="containter mx-auto" style="width: 1000px">
-          <img
-            src="https://lirp.cdn-website.com/6e3a95c5/dms3rep/multi/opt/Organimi+Logo+Full-640w.png"
-            alt="organimi logo"
-            style="width: 250px; text-align: center"
-          />
+        <!-- WHAT IS ORGANIMI section-->
+        <section id="what-is" class="section-distance">
           <div class="what-is-organimi">
-            <p style="font-size: 1.5rem !important; color:#ba4a4a">WHAT IS ORGANIMI?</p>
-            <p>
-              Organimi is a trendy and affordable market-leading org chart tool for organizational design, people planning, onboarding, and sales and account management.
-            </p>
-          </div>
-        </div>
+            <img src="assets/project/organimi/organimi-logo.png" alt="" />
 
-      </section>
-
-      <!-- CHALLENGE section-->
-      <section
-        id="challenge"
-        class="challenge-section layout-engine-section background-width--full-bleed content-width--wide horizontal-alignment--center vertical-alignment--middle black-bold"
-        data-section-id="5fb5f025513b754ef7259daa"
-        data-controller="SectionWrapperController, MagicPaddingController"
-        data-current-styles='{
-  "imageOverlayOpacity": 0.15,
-  "backgroundWidth": "background-width--full-bleed",
-  "sectionHeight": "section-height--custom",
-  "customSectionHeight": 40,
-  "horizontalAlignment": "horizontal-alignment--center",
-  "verticalAlignment": "vertical-alignment--middle",
-  "contentWidth": "content-width--wide",
-  "sectionTheme": "black-bold",
-  "sectionAnimation": "none",
-  "backgroundMode": "image"
-}'
-        data-animation="none"
-        style="min-height: 5rem"
-        data-controllers-bound="SectionWrapperController, MagicPaddingController"
-        data-active="true"
-      >
-        <div class="section-background" class="containter mx-auto">
-          <div
-            class="my-challenge"
-            style="
-              width: 800px;
-              text-align: center;
-              padding-top: 10rem;
-              padding-bottom: 5rem;
-            "
-          >
-            <p style="font-size: 1.5rem !important; color:#000 !important">OUR CHALLENGE <br /></p>
-            <a style="color: #909090;">
-              The dashboard design appears outdated compared to its competitors. Organimi needs an upgrade to ensure that it still remains competitive in the long haul. <br /><br />
-            </a>
-            <p style="color: #ba4a4a; font-size: 1.4rem !important; line-height: 2.2rem !important;">
-              How might I redesign a dashboard to allow users to manage their files and report on their progress more effectively and easily? 
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- ORIENTATION section-->
-      <section
-        id="orientation"
-        class="constraint-section layout-engine-section background-width--full-bleed content-width--wide horizontal-alignment--center vertical-alignment--middle black-bold"
-        data-section-id="5fb5f025513b754ef7259daa"
-        data-controller="SectionWrapperController, MagicPaddingController"
-        data-current-styles='{
-  "imageOverlayOpacity": 0.15,
-  "backgroundWidth": "background-width--full-bleed",
-  "sectionHeight": "section-height--custom",
-  "customSectionHeight": 40,
-  "horizontalAlignment": "horizontal-alignment--center",
-  "verticalAlignment": "vertical-alignment--middle",
-  "contentWidth": "content-width--wide",
-  "sectionTheme": "black-bold",
-  "sectionAnimation": "none",
-  "backgroundMode": "image"
-}'
-        data-animation="none"
-        style="min-height: 5rem"
-        data-controllers-bound="SectionWrapperController, MagicPaddingController"
-        data-active="true"
-      >
-        <div class="section-background" style="padding-bottom: 10rem"></div>
-
-        <div class="containter mx-auto" style="width: 950px">
-          <div class="constraint">
-            <h3>ORIENTATION<br /><br /></h3>
-            <p  style="padding-bottom: 3rem;
-                      text-align: left;
-                      transition-timing-function: ease;
-                      transition-duration: 1.2s;
-                      transition-delay: 0.0993377s;
-                      letter-spacing: 0.02rem;
-                      "
-                class="preFade fadeIn">
-                Before jumping into redesign the dashboard page, I spent my time to define the purpose and important rules when designing a dashboard because this was my first time. After reading two articles on 
-                <a  id=""
-                    href="https://uxplanet.org/10-rules-for-better-dashboard-design-ef68189d734c"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style="font-size: 1vw !important; color: #2D81FF ; text-decoration: none;"
-                    >“10 rules for better dashboard design”</a> 
-                    by Taras Bakusevych, and 
-                <a  id=""
-                    href="https://www.justinmind.com/blog/dashboard-design-best-practices-ux-ui/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style="font-size: 1vw !important; color: #2D81FF ; text-decoration: none;"
-                    >“Dashboard Design: best practices and examples”</a>
-                    by Justinmind, I summarized some key insights I believed that it’s helpful for the Organimi dashboard.
-                    <ol style="
-                      line-height: 2rem;
-                      font-size: 1.2rem;
-                      text-align: left;
-                      transition-timing-function: ease;
-                      transition-duration: 1.2s;
-                      transition-delay: 0.0993377s;
-                      letter-spacing: 0.02rem;
-                      padding-bottom: 3rem;
-                      "
-                    class="preFade fadeIn"> 
-                      <li><p><a style="color: #000">Operational dashboard.</a> It presents data deviations to the users quickly and clearly, show current resource, and display their status. It’s a digital control room designed to help users be quick, proactive, and efficient.</p></li>
-                      <li><p><a style="color: #000">Define the layout and flow.</a> Grids can help to achieve effective alignment and consistency with little effort and create a basic structure or a skeleton for the design. </p></li>
-                      <li><p><a style="color: #000">Follow clear and consistent naming conventions and consistent date formatting.</a> The biggest benefit of using a clear framework is data consistency. If your data is named the same way in each tool, it will be easier for you to use those tools. </p></li>
-                      <li><p><a style="color: #000">Don’t hide information or rely on interactions too much.</a> As one of the primary goals of the dashboard is to surface information at a glance, relying on long scrolling or many interactions dilutes the whole purpose.</p></li>
-                      <li><p><a style="color: #000">Use consistent design language and icon system.</a> Dashboards often contain different styles of data views, so by keeping design light and synchronic, it could deliver clear visibility, simple navigation and striking good looks.</p></li>
-                    </ol>
-             </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- EVALUATION section-->
-            <section
-            id="evaluation"
-            class="evaluation-section layout-engine-section background-width--full-bleed content-width--wide horizontal-alignment--center vertical-alignment--middle black-bold"
-            data-section-id="5fb5f025513b754ef7259daa"
-            data-controller="SectionWrapperController, MagicPaddingController"
-            data-current-styles='{
-      "imageOverlayOpacity": 0.15,
-      "backgroundWidth": "background-width--full-bleed",
-      "sectionHeight": "section-height--custom",
-      "customSectionHeight": 40,
-      "horizontalAlignment": "horizontal-alignment--center",
-      "verticalAlignment": "vertical-alignment--middle",
-      "contentWidth": "content-width--wide",
-      "sectionTheme": "black-bold",
-      "sectionAnimation": "none",
-      "backgroundMode": "image"
-    }'
-            data-animation="none"
-            style="min-height: 5rem"
-            data-controllers-bound="SectionWrapperController, MagicPaddingController"
-            data-active="true"
-          >
-            <div class="section-background" style="padding-bottom: 10rem"></div>
-    
-            <div class="containter mx-auto" style="width: 950px; margin-bottom: 4rem;">
-              <div class="constraint">
-                <h3>EVALUATION FOR THE OLD DASHBOARD<br /><br /></h3>
-                <p  style="padding-bottom: 3rem;
-                          text-align: left;
-                          transition-timing-function: ease;
-                          transition-duration: 1.2s;
-                          transition-delay: 0.0993377s;
-                          letter-spacing: 0.02rem;
-                          "
-                    class="preFade fadeIn">
-                    I took <a style="color:#000">an overview of Organimi’s orginal dashboard</a> after taking key insights from the research. I listed <a style="color:#000 !important">9 things that needed to be redesigned.</a>
-                        <ol style="
-                          line-height: 2rem;
-                          font-size: 1.2rem;
-                          text-align: left;
-                          transition-timing-function: ease;
-                          transition-duration: 1.2s;
-                          transition-delay: 0.0993377s;
-                          letter-spacing: 0.02rem;
-                          padding-bottom: 3rem;
-                          "
-                        class="preFade fadeIn"> 
-                          <li><p>The dashboard could be divided into<a style="color: #000"> 3 main sections - Sidebard menu, Recent files, and Quick actions. </a>However, the distance from the top bar to Dashboard, Recent Files, and Quick Actions was inconsistent and the text size was not the same (Dashboard: 22px, Recent Files: 24px, and Quick Actions: 28px). This made the white space untidy and obscure to the users.</p></li>
-                          <li><p><a style="color: #000">Name of the organization</a> “Bank of America” needed to be<a style="color: #000"> highlighted by another color.</a></p></li>
-                          <li><p><a style="color: #000">Sidebar Menu</a>was<a style="color: #000"> not arranged </a>well due to the<a style="color: #000"> distance between items. </a>The icons were too big and needed to be changed to match with the names.</p></li>
-                          <li><p><a style="color: #000">The Organizations section </a>should be removed because it<a style="color: #000"> repeats two times.</a></p></li>
-                          <li><p><a style="color: #000">A grey rectangle at “New Organizaition” </a>should be<a style="color: #000"> deleted.</a></p></li>
-                          <li><p>At<a style="color: #000"> Recent files</a>, it was<a style="color: #000"> a long scrollable list </a>but it was<a style="color: #000"> hard for users to recognize. </a></p></li>
-                          <li><p>A<a style="color: #000"> “New Chart” button </a>needed to be<a style="color: #000"> added.</a></p></li>
-                          <li><p><a style="color: #000">Quick Actions </a>should be<a style="color: #000"> divided into two parts </a>which are <a style="color: #000">What’s New and Integrations.</a></p></li>
-                          <li><p>The<a style="color: #000"> white space </a>was<a style="color: #000"> not balanced</a>, it was hard for users to read.</p></li>
-                        </ol>
-                </p>
-                <div class="zoom-old-design">
-                  <input type="checkbox" id="zoomCheck-1">
-                  <label for="zoomCheck-1">
-                    <div class="background-img"></div>
-                    <img src="/assets/project/organimi/old-design.svg" alt="old design of organimi">
-                  </label>
-                </div>
-
-              </div>
+            <div>
+              <h2>WHAT IS ORGANIMI INC.,? <br /><br /></h2>
+              <p>
+                Organimi is a trendy and affordable market-leading org chart
+                tool for organizational design, people planning, onboarding, and
+                sales and account management.
+              </p>
             </div>
-          </section>
+          </div>
+        </section>
 
-      <!-- FINAL DESIGN SECTION -->
+        <!-- CHALLENGE section-->
+        <section id="challenge" class="section-distance">
+          <div class="challenge" style="text-align: center">
+            <h3>OUR CHALLENGE <br /><br /></h3>
+            <p>
+              The dashboard design appears outdated compared to its competitors.
+              Organimi needs an upgrade to ensure that it still remains
+              competitive in the long haul. <br /><br />
+            </p>
+            <h2>
+              How might I redesign a dashboard to allow users to manage their
+              files and report on their progress more effectively and easily?
+            </h2>
+          </div>
+        </section>
 
-      <section class="design-section
-    
-              layout-engine-section
-            
-            background-width--full-bleed
-            
-              content-width--wide
-            
-            horizontal-alignment--center
-            vertical-alignment--middle
-            
-            
-            black-bold" data-section-id="5fb5f025513b754ef7259daa" data-controller="SectionWrapperController, MagicPaddingController" data-current-styles="{
-          &quot;imageOverlayOpacity&quot;: 0.15,
-          &quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
-          &quot;sectionHeight&quot;: &quot;section-height--custom&quot;,
-          &quot;customSectionHeight&quot;: 40,
-          &quot;horizontalAlignment&quot;: &quot;horizontal-alignment--center&quot;,
-          &quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
-          &quot;contentWidth&quot;: &quot;content-width--wide&quot;,
-          &quot;sectionTheme&quot;: &quot;black-bold&quot;,
-          &quot;sectionAnimation&quot;: &quot;none&quot;,
-          &quot;backgroundMode&quot;: &quot;image&quot;
-        }" data-animation="none" style="min-height: 40vh;" data-controllers-bound="SectionWrapperController, MagicPaddingController" data-active="true">
-        <div class="section-background">
-          <div class="containter mx-auto" style="width: 1200px" >
-            <div class="content">
-              <div class="content-wrapper" style="
-            
-                padding-top: 3vw;
+        <!-- ORIENTATION section-->
+        <section id="orientation" class="section-distance">
+          <div class="orientation">
+            <h3>ORIENTATION <br /><br /></h3>
+            <p class="secondary">
+              Before jumping into redesign the dashboard page, I spent my time
+              to
+              <a class="primary">
+                define the purpose and important rules when designing a
+                dashboard</a
+              >
+              because this was my first time. After reading two articles on
+              <a
+                class="link"
+                href="https://uxplanet.org/10-rules-for-better-dashboard-design-ef68189d734c"
+              >
+                “10 rules for better dashboard design” by Taras Bakusevych</a
+              >
+              and
+              <a
+                class="link"
+                href="https://www.justinmind.com/blog/dashboard-design-best-practices-ux-ui/"
+                >“Dashboard Design: best practices and examples” by
+                Justinmind</a
+              >
+              , I summarized some key insights I believed that it’s helpful for
+              the Organimi dashboard.
+            </p>
+            <div class="organimi">
+              <ol>
+                <li>
+                  Operational dashboard.
+                  <a class="secondary">
+                    It presents data deviations to the users quickly and
+                    clearly, show current resource, and display their status.
+                    It’s a digital control room designed to help users be quick,
+                    proactive, and efficient.</a
+                  >
+                </li>
+                <li>
+                  Define the layout and flow.<a class="secondary">
+                    Grids can help to achieve effective alignment and
+                    consistency with little effort and create a basic structure
+                    or a skeleton for the design.</a
+                  >
+                </li>
+                <li>
+                  Follow clear and consistent naming conventions and consistent
+                  date formatting.<a class="secondary">
+                    The biggest benefit of using a clear framework is data
+                    consistency. If your data is named the same way in each
+                    tool, it will be easier for you to use those tools.</a
+                  >
+                </li>
+                <li>
+                  Don’t hide information or rely on interactions too much.<a
+                    class="secondary"
+                  >
+                    As one of the primary goals of the dashboard is to surface
+                    information at a glance, relying on long scrolling or many
+                    interactions dilutes the whole purpose.</a
+                  >
+                </li>
+                <li>
+                  Use consistent design language and icon system.<a
+                    class="secondary"
+                  >
+                    Dashboards often contain different styles of data views, so
+                    by keeping design light and synchronic, it could deliver
+                    clear visibility, simple navigation and striking good
+                    looks.</a
+                  >
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
 
-                ">
-                <div class="sqs-layout sqs-grid-12 columns-12" data-type="page-section" id="page-section-5fb5f025513b754ef7259daa">
-                  <div class="row sqs-row">
-                    <div class="col sqs-col-12 span-12">
-                      <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-eb52d803c0f54294b9c9">
-                        <div class="sqs-block-content">
+        <!-- EVALUATION section-->
+        <section id="evaluation" class="section-distance">
+          <div class="evaluation">
+            <h3>EVALUATION FOR THE OLD DASHBOARD<br /><br /></h3>
+            <p class="secondary">
+              I took
+              <a class="primary">an overview of Organimi's orginal dashboard</a>
+              after taking key insights from the research. I listed
+              <a class="primary">9 things that needed to be redesigned:</a>
+            </p>
 
-                            <!-- the final design -->
-                            <h3>THE FINAL DESIGN <br> <br> </h3>
-                            <p style="padding-bottom: 3rem;
-                              text-align: left;
-                              transition-timing-function: ease;
-                              transition-duration: 1.2s;
-                              transition-delay: 0.0993377s;
-                              letter-spacing: 0.02rem;
-                              "
-                              class="preFade fadeIn">
-                              The following showcases the after of my redesign, aloing with the explanations of my design choices:
-                            </p>
+            <div class="organimi">
+              <ol>
+                <li>
+                  <a class="secondary">The dashboard could be divided into</a> 3
+                  main sections - Sidebard menu, Recent files, and Quick
+                  actions.<a class="secondary">
+                    However, the distance from the top bar to Dashboard, Recent
+                    Files, and Quick Actions was inconsistent and the text size
+                    was not the same (Dashboard: 22px, Recent Files: 24px, and
+                    Quick Actions: 28px). This made the white space untidy and
+                    obscure to the users.</a
+                  >
+                </li>
+                <li>
+                  <a class="secondary">Name of the organization</a> “Bank of
+                  America” <a class="secondary">needed to be</a> highlighted by
+                  another color.
+                </li>
+                <li>
+                  Sidebar Menu <a class="secondary">was</a> not arranged well
+                  <a class="secondary">due to</a> the distance between items.
+                  <a class="secondary"
+                    >The icons were too big and needed to be changed to match
+                    with the names.</a
+                  >
+                </li>
+                <li>
+                  The Organizations section<a class="secondary">
+                    should be removed because it</a
+                  >
+                  repeats two times.
+                </li>
+                <li>
+                  A grey rectangle at “New Organizaition”<a class="secondary">
+                    should be</a
+                  >
+                  deleted.
+                </li>
+                <li>
+                  <a class="secondary">At Recent files, it was</a> a long
+                  scrollable list <a class="secondary">but it was</a> hard for
+                  users to recognize.
+                </li>
+                <li>
+                  A “New Chart” button
+                  <a class="secondary">needed to be</a> added.
+                </li>
+                <li>
+                  Quick Actions
+                  <a class="secondary">should be divided into</a> two parts
+                  <a class="secondary"
+                    >which are What’s New and Integrations.</a
+                  >
+                </li>
+                <li>
+                  The white space
+                  <a class="secondary">was not balanced, it was</a> hard for
+                  users to read.
+                </li>
+              </ol>
+            </div>
 
-                            <div class="row" style="margin-bottom: 8rem;">
+            <div class="img-project">
+              <img src="/assets/project/organimi/old-design.png" alt="" />
+            </div>
+          </div>
+        </section>
 
-                              <div class="col-left" style="padding-bottom: 3rem;">
-                                <p><a style="color:#000">1. Organization Name</a> <br><br><br>
-                                I highlighted the organization name with organe-ish color from the color system. <br> <br>
-                                This would allow users to be able to quickly recognize which organization they are watching or using.
-                                </p>
-                              </div>
+        <!-- FINAL DESIGN section-->
+        <section id="final-design" class="section-distance">
+          <div class="final-design sm-section">
+            <h3>FINAL DESIGN<br /><br /></h3>
+            <p class="secondary">
+              The following showcases the after of my redesign, aloing with the
+              explanations of my design choices: <br />
+              <br />
+            </p>
 
-                              <div class="col-right" style="padding-bottom: 3rem;">
-                                <p><a style="color:#000">2. Organization Section on the sidebar menu and Helps & Settings</a> <br><br>
-                                After removing the Organization section, I moved Helps and Settings to the sidebar menu. <br> <br>
-                                The lead designer wanted the top bar to be more clear and focus on “Upgrade Now” button. Besides, deleting the organization section will have more negative space.
-                                </p>
-                              </div>
+            <div class="final-solution">
+              <p class="even">
+                1. Organization Name <br /><br /><a class="secondary"
+                  >I highlighted the organization name with organe-ish color
+                  from the color system. <br /><br />
+                  This would allow users to be able to quickly recognize which
+                  organization they are watching or using.</a
+                >
+              </p>
+              <p class="odd">
+                2. Organization Section on the sidebar menu and Helps & Settings
+                <br /><br /><a class="secondary"
+                  >After removing the Organization section, I moved Helps and
+                  Settings to the sidebar menu. <br /><br />
+                  The lead designer wanted the top bar to be more clear and
+                  focus on “Upgrade Now” button. Besides, deleting the
+                  organization section will have more negative space.</a
+                >
+              </p>
+              <p class="even">
+                3. Sidebar Menu Section <br /><br /><a class="secondary"
+                  >I changed some icons to match with the name along with its
+                  size. I moved the Help & Settings from the top bar to the menu
+                  bar. I also deleted the grey rectangle at the “New
+                  Organization” button. <br /><br />
+                  The consistent space between the items are now more clear and
+                  structured.</a
+                >
+              </p>
+              <p class="odd">
+                4. Recent Files <br /><br /><a class="secondary"
+                  >The “New Chart” button was added as a shortcut for the users.
+                  A page number were moved to the bottom. <br /><br />
+                  Instead of using the scrollable list, I used a clickable list
+                  that helps the users less stressed with data. And it’s also
+                  less negative space.</a
+                >
+              </p>
+              <p class="img-project">
+                <img
+                  src="/assets/project/organimi/redesign-dashboard.png"
+                  alt=""
+                />
+              </p>
+              <p class="even">
+                5. Quick Actions Section <br /><br /><a class="secondary"
+                  >It was divided into What’s New and Integrations. <br /><br />
+                  The consistent space between the items is now more clear and
+                  structured.</a
+                >
+              </p>
+              <p class="odd">
+                6. Four main blocks with consistent structure <br /><br /><a
+                  class="secondary"
+                  >Dashboard, Recent Files, What’s New, and Integrations are now
+                  using the same style and size type with the consistent space
+                  between the top bar and themselves. <br /><br />
+                  The dashboard is now well-arranged and clearer. The final
+                  design is simple and easy to navigate around the website.
+                </a>
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
 
-                              <div class="col-left" style="padding-bottom: 3rem;">
-                                <p><a style="color:#000">3. Sidebar Menu Section</a> <br><br>
-                                I changed some icons to match with the name along with its size. I moved the Help & Settings from the top bar to the menu bar. I also deleted the grey rectangle at the “New Organization” button. <br> <br>
-                                The consistent space between the items are now more clear and structured.
-                                </p>
-                              </div>
+      <!-- Work Recommendation -->
+      <section class="work-suggest">
+        <div class="title-project-page">CHECK OUT MY OTHER WORK</div>
+        <div class="work-list">
+          <!-- Project 1 -->
 
-                              <div class="col-right" style="padding-bottom: 3rem;">
-                                <p><a style="color:#000">4. Recent Files</a> <br><br>
-                                The “New Chart” button was added as a shortcut for the users. A page number were moved to the bottom. <br> <br>
-                                Instead of using the scrollable list, I used a clickable list that helps the users less stressed with data. And it’s also less negative space.
-                                </p>
-                              </div>
-
-                              <div class="col-image"
-                                   style="padding-bottom: 6rem; padding-top: 3rem;">
-                                   <div class="zoom-old-design">
-                                    <input type="checkbox" id="zoomCheck-2">
-                                    <label for="zoomCheck-2">
-                                      <div class="background-img"></div>
-                                      <img src="/assets/project/organimi/organimi-redesign.svg" alt="organimi redesign dashboard">
-                                    </label>
-                                  </div>
-                              </div>
-
-                              <div class="col-left" style="padding-bottom: 3rem;">
-                                <p><a style="color:#000">5. Quick Actions Section</a> <br><br>
-                                It was divided into What’s New and Integrations. <br> <br>
-                                The consistent space between the items is now more clear and structured.
-                                </p>
-                              </div>
-
-                              <div class="col-right" style="padding-bottom: 3rem;">
-                                <p><a style="color:#000">6. Four main blocks with consistent structure</a> <br><br>
-                                Dashboard, Recent Files, What’s New, and Integrations are now using the same style and size type with the consistent space between the top bar and themselves. <br> <br>
-                                The dashboard is now well-arranged and clearer. The final design is simple and easy to navigate around the website. 
-                                </p>
-                              </div>
-
-                            </div>
-
-
-                          <!-- the feedback -->
-                          <p style="color:#ba4a4a; font-size: 1.5rem !important;">THE FEEDBACK <br><br> </p>
-                          <p style="
-                              text-align: left;
-                              transition-timing-function: ease;
-                              transition-duration: 1.2s;
-                              transition-delay: 0.0993377s;
-                              letter-spacing: 0.02rem;
-                              "
-                              class="preFade fadeIn">
-                              “Thanks Kim. This looks good so far.<br>
-                              The dashboard spacing entitle look much cleaner. That’s good. Let’s do a few small things. Once again, you are off to a good start. Keep going with your ideas.
-                              <br><br>
-                              I think we are finished with this page now. Let's stop here.”
-                          </p>
-                          <p style="
-                              font-weight: 550;
-                              font-style: italic;
-                              text-align: right;
-                              transition-timing-function: ease;
-                              transition-duration: 1.2s;
-                              transition-delay: 0.0993377s;
-                              letter-spacing: 0.02rem;
-                              "
-                              class="preFade fadeIn">
-                              Blair Robert - Lead Product Designer @ Organimi
-                          </p>
-                            
-                        </div>
-                      </div>
-                    </div>
+          <div>
+            <a href="ally.html" class="image-list">
+              <div class="image-background sm-background-1">
+                <div class="image-filter sm-filter">
+                  <div class="image-mobile hover-here">
+                    <img
+                      class="hidden-img"
+                      src="assets/project/ally/img-footer.png"
+                      alt=""
+                    />
+                    <p class="hidden-text">
+                      The app turning local stores into safe spaces and
+                      bystanders into allies.
+                    </p>
                   </div>
                 </div>
               </div>
+            </a>
+            <div href="/" class="button line-top">
+              <a
+                href="/"
+                class="float-left"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ally</a
+              >
+              <div class="float-right">
+                <img src="assets/svg/arrow.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+
+          <div>
+            <a href="foodie.html" class="image-list">
+              <div class="image-background sm-background-4">
+                <div class="image-filter sm-filter">
+                  <div class="image-web hover-here">
+                    <img
+                      class="hidden-img"
+                      src="assets/project/foodie/foodie-image.png"
+                      alt=""
+                    />
+                    <p class="hidden-text">
+                      A streaming platform for foodies as well as a place where
+                      they can share tasty recipes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div href="/" class="button line-top">
+              <a
+                href="/"
+                class="float-left"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Foodie</a
+              >
+              <div class="float-right">
+                <img src="assets/svg/arrow.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+
+          <div>
+            <a href="ecycle.html" class="image-list">
+              <div class="image-background sm-background-3">
+                <div class="image-filter sm-filter">
+                  <div class="image-mobile hover-here">
+                    <img
+                      class="hidden-img"
+                      src="assets/project/ecycle/img-footer.png"
+                      alt=""
+                    />
+                    <p class="hidden-text">
+                      An application helps users manage their time actively
+                      while renting an e-bike.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div href="/" class="button line-top">
+              <a
+                href="/"
+                class="float-left"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ecycle</a
+              >
+              <div class="float-right">
+                <img src="assets/svg/arrow.svg" alt="" />
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-
-
-
     </main>
 
-    <!-- Footer-->
-    <footer>
-      <div class="css-container">
-        <div class="upper-footer">
-          <a style="font-size: 4rem !important;
-              font-family: Montserrat !important;
-              color: #BA4A4A;
-              text-decoration: none;
-              letter-spacing: 0.2rem;
-              text-align: left; 
-              transition-timing-function: ease; 
-              transition-duration: 0.45s; 
-              transition-delay: 0.575s;" 
-              class="preScale scaleIn display-6 fw-bold"
-              href="/ally.html" target="_self">
-              ALLY
-          </a>
-          
-          <a style="font-size: 4rem !important;
-              font-family: Montserrat !important;
-              color: #BA4A4A;
-              text-decoration: none;
-              letter-spacing: 0.2rem;
-              text-align: right; 
-              transition-timing-function: ease; 
-              transition-duration: 0.45s; 
-              transition-delay: 0.575s;" 
-              class="preScale scaleIn display-6 fw-bold"
-              href="ecycle.html" target="_self">
-              ECYCLE
-          </a>
-        </div>
-        <hr class="line2" />
-
-        <div class="lower-footer">
-          <span>DESIGNED BY MY 1ST PERSONARITY</span>
-          <a style="font-size: 1rem !important;
-              text-decoration: none;
-              color: #000;
-              letter-spacing: 0.05em !important;
-              text-align: center;"
-              class="preScale scaleIn display-6 fw-bold"
-              href="#role-section">
-              BACK TO TOP
-          </a>
-          <span>CODED BY MY 2ND PERSONARITY</span>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Javascript -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      type="text/javascript"
-      src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2"
-    ></script>
-
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"
-    ></script>
-    
-    <script src="/assets/js/script.js"></script>
-
+    <!-- Footer -->
+    <footer id="homepage-footer" class="container"></footer>
   </body>
 </html>
